@@ -1,0 +1,100 @@
+
+
+/* giving the size of html and body 100% */
+
+html, body{
+	height: 100%;
+	width: auto;
+	overflow:auto;
+	display: block; 
+	background-image: url(../images/start_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;	
+	border: 18px solid;
+	border-image-source: url(../images/border.jpg);    
+	border-image-slice: 20;	
+	}	
+	
+ #heading {
+	 color: #8800cc;
+	 font-weight: bold;
+	 font-size: 34px;
+ }
+ 
+  ul {
+	 color: #ffff00;
+	 font-weight: bold;
+	 font-size: 19px;
+	 padding-bottom: 5%;
+  }
+	
+	
+/* adjusting background and elements of the page according to device orientation */
+	
+@media (orientation: portrait) {
+	
+	html, body{
+	height: 100%;
+	width: auto;
+	overflow:hidden;
+	display: block; 
+	background-image: url(../images/start_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;	
+	border: 12px solid;
+	border-image-source: url(../images/border.jpg);    
+	border-image-slice: 20;	
+	}		
+	
+	img {
+		display: block;
+		margin: auto;
+		padding: 0.5%;
+		padding-top: 45%;
+		width: 130%;
+		height: auto;
+	}
+	
+	.button {
+	margin: auto;
+	display: block;
+    background-color: #8800cc;
+    border: none;
+    color: #ffff00;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+	font-weight: bold;
+    font-size: 16px;
+	
+	}
+}
+
+@media (orientation: landscape) {
+	img {
+		display: block;
+		padding: 0.5%;
+		max-height: 100%;
+		width: auto;
+		margin: auto;
+	}
+	
+	.button {
+	margin: auto;
+	display: block;
+    background-color: #8800cc;
+    border: none;
+    color: #ffff00;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+	font-weight: bold;
+    font-size: 24px;	
+	}
+}
+
+
+
+

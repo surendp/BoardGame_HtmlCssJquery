@@ -1,0 +1,81 @@
+
+/* giving the size of html and body 100% and maintaining them according to orientation of device*/
+
+@media (orientation: portrait) {
+	html, body{
+		height: 100%;
+		/*overflow:hidden;*/
+	}	
+}
+
+@media (orientation: landscape) {
+	html, body{
+		overflow:auto;		
+	}	
+}
+
+/* designing the div which holds the canvas element*/
+#main{
+	height: 100%;
+	text-align: center;
+}
+
+ 
+/* this class is loaded before the game starts*/
+.before_start{
+	
+}
+
+
+
+/* this class is loaded after the game statrs*/
+@media (orientation: portrait) {
+	#board{	
+		margin-top: 35%;
+		padding: 0.5%;
+		display: block; 
+		width : 100%;
+		/*min-height: 35%;  */
+		height : auto;
+		background-image: url(../images/fabric.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		border: 15px solid;
+		border-image-source: url(../images/border.jpg);    
+		border-image-slice: 60;
+	}
+}
+
+@media (orientation: landscape) {
+	#board{	
+		margin: 1%;
+		padding: 0.5%;
+		display: block; 
+		height : auto;
+		width : auto;	
+		background-image: url(../images/fabric.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		border: 21px solid;
+		border-image-source: url(../images/border.jpg);    
+		border-image-slice: 60;
+	}
+}
+
+/* this class is for game over*/ 
+.game_over{
+		
+}
+
+/* .landscape{
+				 -moz-transform:rotate(90deg);
+				 -webkit-transform:rotate(90deg);
+				 -o-transform:rotate(90deg);
+				 -ms-transform:rotate(90deg);
+				 transform:rotate(90deg);
+}   */
+
+
+
